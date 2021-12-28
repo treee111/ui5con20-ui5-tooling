@@ -11,11 +11,17 @@ type: application
 #     - name: sap.ui.core
 server:
   customMiddleware:
-  - name: ui5-middleware-servestatic
+  # - name: ui5-middleware-servestatic
+  #   afterMiddleware: compression
+  #   mountPath: /resources
+  #   configuration:
+  #     rootPath: "/Users/benjamin/VSCode/sapui5-rt-1.79.2/resources"
+  - name: ui5-middleware-simpleproxy
     afterMiddleware: compression
     mountPath: /resources
     configuration:
-      rootPath: "/Users/benjamin/VSCode/sapui5-rt-1.79.2/resources"
+      baseUri: "https://sapui5.hana.ondemand.com/1.79.2/resources"
+      strictSSL: false
   - name: ui5-middleware-livereload
     afterMiddleware: compression
     configuration:
