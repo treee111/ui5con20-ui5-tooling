@@ -14,14 +14,16 @@
 	},
 	"devDependencies": {
 		"@ui5con20/server": "^1.0.0",
-		"ui5-middleware-livereload": "^0.5.1"
+		"ui5-middleware-livereload": "^0.5.1",
+		"ui5-middleware-servestatic": "^0.3.7"
 	},
 	"ui5": {
 		"dependencies": [
 			"@ui5con20/library",
 			"@ui5con20/server",
 			"@ui5con20/theme-library",
-			"ui5-middleware-livereload"
+			"ui5-middleware-livereload",
+			"ui5-middleware-servestatic"
 		]
 	}
 }
