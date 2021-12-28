@@ -3,18 +3,18 @@ metadata:
   name: library
 type: library
 
-# framework:
-#   name: OpenUI5
-#   version: "1.79.0"
-#   libraries:
-#     - name: sap.ui.core
-server:
-  customMiddleware:
-  - name: ui5-middleware-servestatic
-    afterMiddleware: compression
-    mountPath: /resources
-    configuration:
-      rootPath: "/Users/benjamin/VSCode/sapui5-rt-1.79.2/resources"
+framework:
+  name: OpenUI5
+  version: "1.79.0"
+  libraries:
+    - name: sap.ui.core
+# server:
+#   customMiddleware:
+#   - name: ui5-middleware-servestatic
+#     afterMiddleware: compression
+#     mountPath: /resources
+#     configuration:
+#       rootPath: "/Users/benjamin/VSCode/sapui5-rt-1.79.2/resources"
 
 ---
 specVersion: "2.1"

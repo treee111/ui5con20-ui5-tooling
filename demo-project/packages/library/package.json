@@ -8,13 +8,5 @@
 	},
 	"dependencies": {
 		"chartist": "^0.11.4"
-	},
-	"devDependencies": {
-		"ui5-middleware-servestatic": "^0.3.7"
-	},
-	"ui5": {
-		"dependencies": [
-			"ui5-middleware-servestatic"
-		]
 	}
 }
